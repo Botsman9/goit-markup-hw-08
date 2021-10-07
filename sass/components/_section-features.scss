@@ -1,0 +1,36 @@
+.section-features__list {
+  display: flex;
+}
+
+.section-features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  color: var(--title-text-color);
+}
+
+.section-features__icon {
+  width: 270px;
+  height: 120px;
+
+  padding: 25px 100px;
+
+  background: var(--section-comand-text-color);
+  border-radius: 4px;
+}
+
+.section-features__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}

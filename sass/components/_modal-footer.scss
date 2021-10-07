@@ -1,0 +1,70 @@
+.footer-modal {
+  display: block;
+}
+
+.footer-modal__title {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-modal__container {
+  display: block;
+  min-width: 570px;
+  margin-top: 10px;
+}
+
+.footer-modal__form {
+  display: flex;
+}
+
+.footer-modal__text {
+  display: block;
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  margin-right: 12px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  resize: none;
+  outline: transparent;
+}
+
+.footer-modal__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  margin: 0;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-modal__icon {
+  display: block;
+  margin-left: 10px;
+}

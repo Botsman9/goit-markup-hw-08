@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Общие стили */
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --hero-color: #2f303a;
+  --h1-text-color: #ffffff;
+  --sixth-text-color: #ececec;
+  --section-comand-text-color: #f5f4fa;
+  --logo-text-color: #000000;
+  --h1andadres-text-color: #ffffff;
+}
+/* цвет основного текста #757575 */
+
+/* вторичный цвет текста #212121 */
+
+/* белый цвет #FFFFFF */
+
+/* акцент #2196F3 */
+
+/* цвет героя #2F303A */
+
+/* фон секции уоманда #f5f4fa */
+
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section-title,
+.section-comand__title,
+.section-skils__title,
+.portfolio-cart__title,
+.section-clients__title {
+  color: var(--title-text-color);
+}
+
+button {
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+:hover,
+:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.vusually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,145 @@
+.head-nav {
+  display: flex;
+  margin-left: 0;
+}
+.head .container {
+  display: flex;
+  justify-content: space-between;
+}
+.head .head-nav__link {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.head-nav__link {
+  color: var(--logo-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.head-nav__sektor {
+  color: var(--accent-color);
+}
+
+/* навигация сайта */
+
+.site-nav {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  padding-top: 32px;
+
+  align-items: baseline;
+}
+
+.site-nav .site-nav__link {
+  color: var(--title-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+.studio {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  margin-left: 93px;
+  margin-right: 50px;
+}
+
+.portfolio {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  margin-right: 50px;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  align-items: center;
+
+  width: 48px;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  position: absolute;
+  top: 76px;
+}
+
+.clip::after {
+  content: "";
+  display: block;
+  align-items: center;
+
+  width: 78px;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  position: absolute;
+  top: 76px;
+}
+.contakt {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  margin-right: auto;
+}
+
+.head-contacts {
+  font-weight: 500;
+
+  padding-top: 32px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.gmail {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+}
+
+.head-contacts__icon {
+  margin-right: 10px;
+}
+
+.head-contacts__link {
+  display: flex;
+  align-items: center;
+  fill: #757575;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.tel {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}

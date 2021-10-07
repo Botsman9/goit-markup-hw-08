@@ -1,0 +1,105 @@
+.section-footer {
+  background-color: var(--hero-color);
+  padding: 60px 0;
+}
+
+.section-footer__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+  color: var(--h1-text-color);
+
+  display: inline-block;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.section-footer__color {
+  color: var(--accent-color);
+}
+
+.section-footer__list {
+  min-width: 231px;
+  min-height: 81px;
+  display: block;
+
+  font-style: normal;
+}
+
+.section-footer__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--h1-text-color);
+}
+
+.section-footer__item.gmail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  color: var(--h1andadres-text-color);
+}
+
+.section-footer__item.tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--h1andadres-text-color);
+}
+
+/* Присоединяйтесь */
+
+.footer-network {
+  margin-right: 93px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.section-footer__container {
+  margin-right: 70px;
+}
+
+.footer-network__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--h1andadres-text-color);
+}
+
+.footer-network__list {
+  margin-top: 20px;
+}
+.footer-network__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-network__link {
+  display: flex;
+  border-radius: 50%;
+
+  fill: rgba(255, 255, 255, 0.1);
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
