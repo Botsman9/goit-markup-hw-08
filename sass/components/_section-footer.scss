@@ -1,6 +1,13 @@
 .section-footer {
   background-color: var(--hero-color);
+  text-align: center;
   padding: 60px 0;
+  background-color: var(--hero-color);
+  @media screen and (min-width: 1200px) {
+    background-color: var(--hero-color);
+    padding: 60px 0;
+    text-align: start;
+  }
 }
 
 .section-footer__logo {
@@ -24,11 +31,16 @@
 }
 
 .section-footer__list {
-  min-width: 231px;
-  min-height: 81px;
+  min-width: 232px;
+  min-height: 79px;
   display: block;
-
   font-style: normal;
+  @media screen and (min-width: 1200px) {
+    min-width: 231px;
+    min-height: 81px;
+    display: block;
+    font-style: normal;
+  }
 }
 
 .section-footer__subtitle {
@@ -38,6 +50,17 @@
   letter-spacing: 0.03em;
 
   color: var(--h1-text-color);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--h1-text-color);
+    text-align: start;
+  }
 }
 
 .section-footer__item.gmail {
@@ -46,10 +69,24 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 
   color: var(--h1andadres-text-color);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+    color: var(--h1andadres-text-color);
+    text-align: start;
+  }
 }
 
 .section-footer__item.tel {
@@ -64,16 +101,25 @@
 /* Присоединяйтесь */
 
 .footer-network {
-  margin-right: 93px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .icon-container {
-  display: flex;
-  align-items: baseline;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .section-footer__container {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-network__title {
@@ -88,8 +134,14 @@
 }
 
 .footer-network__list {
+  justify-content: center;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+  }
 }
+
 .footer-network__item:not(:last-child) {
   margin-right: 10px;
 }
