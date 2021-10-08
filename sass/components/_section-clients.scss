@@ -37,7 +37,7 @@
 }
 
 .section-clients__item {
-  flex-basis: calc((100% - 30 * 3) / 3);
+  flex-basis: calc((100% - 30 * 2) / 2);
   &:nth-child(odd) {
     margin-bottom: 15px;
   }

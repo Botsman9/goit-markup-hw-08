@@ -672,8 +672,8 @@ button {
 }
 
 .section-clients__item {
-  -ms-flex-preferred-size: calc((100% - 30 * 3) / 3);
-      flex-basis: calc((100% - 30 * 3) / 3);
+  -ms-flex-preferred-size: calc((100% - 30 * 2) / 2);
+      flex-basis: calc((100% - 30 * 2) / 2);
 }
 
 .section-clients__item:nth-child(odd) {
