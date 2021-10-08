@@ -4,6 +4,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -38,6 +39,7 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: start;
 
     margin-top: 30px;
     color: var(--title-text-color);

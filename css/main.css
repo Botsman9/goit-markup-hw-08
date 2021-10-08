@@ -338,6 +338,10 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -371,6 +375,7 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: start;
     margin-top: 30px;
     color: var(--title-text-color);
   }
@@ -414,61 +419,76 @@ button {
 }
 
 .section-skils {
-  padding-top: 0;
+  display: none;
 }
 
-.section-skils__title {
-  font-size: 36px;
-  line-height: 1.7;
-  text-align: center;
-  letter-spacing: 0.03em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 1200px) {
+  .section-skils {
+    display: block;
+    padding-top: 0;
+  }
 }
 
-.section-skils__list {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .section-skils__title {
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.section-skils__item {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .section-skils__list {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.section-skils__text {
-  position: absolute;
-  right: 0;
-  margin: 0;
-  bottom: 0%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  width: 370px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .section-skils__item {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-skils__text {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    bottom: 0%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .section-comand {

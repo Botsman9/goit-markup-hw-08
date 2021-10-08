@@ -1,49 +1,61 @@
 .section-skils {
-  padding-top: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .section-skils__title {
-  font-size: 36px;
-  line-height: 1.7;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-skils__list {
-  margin-top: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
 
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .section-skils__item {
-  position: relative;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .section-skils__text {
-  position: absolute;
-  right: 0;
-  margin: 0;
-  bottom: 0%;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    bottom: 0%;
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  width: 370px;
-  height: 70px;
+    width: 370px;
+    height: 70px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
