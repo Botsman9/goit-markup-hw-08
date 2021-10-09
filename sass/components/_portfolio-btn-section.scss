@@ -3,14 +3,24 @@
 }
 
 .portfolio-button__list {
-  display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .portfolio-button__item {
+  margin-bottom: 15px;
   margin-right: 8px;
   &:not(last-child) {
     margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+    &:not(last-child) {
+      margin-right: 8px;
+    }
   }
 }
 

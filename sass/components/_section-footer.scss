@@ -3,10 +3,24 @@
   text-align: center;
   padding: 60px 0;
   background-color: var(--hero-color);
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     background-color: var(--hero-color);
     padding: 60px 0;
     text-align: start;
+  }
+}
+
+.footer-tab__container {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -24,6 +38,12 @@
   &:hover {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    margin-left: 75px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
 
 .section-footer__color {
@@ -35,9 +55,17 @@
   min-height: 79px;
   display: block;
   font-style: normal;
+  @media screen and (min-width: 768px) {
+    width: 232px;
+    height: 79px;
+    margin-left: 61px;
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     min-width: 231px;
     min-height: 81px;
+    text-align: start;
+    margin-left: 0;
     display: block;
     font-style: normal;
   }
@@ -50,8 +78,6 @@
   letter-spacing: 0.03em;
 
   color: var(--h1-text-color);
-  text-align: center;
-
   @media screen and (min-width: 1200px) {
     font-weight: 400;
     font-size: 14px;
@@ -63,7 +89,7 @@
   }
 }
 
-.section-footer__item.gmail {
+.fgmail {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -73,7 +99,7 @@
   margin-bottom: 8px;
 
   color: var(--h1andadres-text-color);
-  text-align: center;
+  margin-right: 0;
 
   @media screen and (min-width: 1200px) {
     font-weight: 400;
@@ -89,7 +115,7 @@
   }
 }
 
-.section-footer__item.tel {
+.ftel {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -102,8 +128,14 @@
 
 .footer-network {
   padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    margin-right: 74px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    padding-top: 0px;
   }
 }
 
@@ -117,8 +149,10 @@
 }
 
 .section-footer__container {
+  text-align: center;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -131,11 +165,19 @@
   text-transform: uppercase;
 
   color: var(--h1andadres-text-color);
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-network__list {
   justify-content: center;
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-top: 20px;

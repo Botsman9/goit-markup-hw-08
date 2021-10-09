@@ -39,13 +39,17 @@
 .section-clients__item {
   flex-basis: calc((100% - 30 * 2) / 2);
   &:nth-child(odd) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: 0;
     &:nth-child(odd) {
-      margin-bottom: -15px;
+      margin-bottom: -30px;
     }
+    margin-right: -30px;
   }
 }
 
