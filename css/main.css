@@ -1390,6 +1390,14 @@ button {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-button__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-button__list {
     display: -webkit-box;
@@ -1401,21 +1409,23 @@ button {
   }
 }
 
-.portfolio-button__item {
-  margin-bottom: 15px;
-  margin-right: 8px;
-}
-
 .portfolio-button__item:not(last-child) {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio-button__item {
-    margin-right: 8px;
+.portfolio-button__item:nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button__item:nth-child(n + 4) {
+    margin-top: 0px;
   }
-  .portfolio-button__item:not(last-child) {
-    margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-button__item:nth-child(n + 4) {
+    margin-top: 0px;
   }
 }
 
@@ -1440,14 +1450,19 @@ button {
 }
 
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 90px;
+  }
 }
 
 .portfolio-cart__list {
-  margin-top: 50px;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,9 +1473,23 @@ button {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-cart__list {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-cart__list {
+    margin-top: 50px;
+  }
+}
+
 .portfolio-cart__item {
+  display: block;
+  width: 450px;
+  height: 404px;
   background: #ffffff;
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -1472,6 +1501,20 @@ button {
 .portfolio-cart__item:hover .portfolio-cart__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-cart__item {
+    width: 354px;
+    height: 404px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-cart__item {
+    width: 370px;
+    height: 404px;
+  }
 }
 
 .portfolio-cart__text {
@@ -1495,6 +1538,7 @@ button {
 }
 
 .portfolio-cart__container {
+  display: block;
   position: relative;
   overflow: hidden;
 }

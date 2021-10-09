@@ -4,6 +4,9 @@
 
 .portfolio-button__list {
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
@@ -11,15 +14,21 @@
 }
 
 .portfolio-button__item {
-  margin-bottom: 15px;
-  margin-right: 8px;
   &:not(last-child) {
     margin-right: 8px;
   }
+  &:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(n + 4) {
+      margin-top: 0px;
+    }
+  }
   @media screen and (min-width: 1200px) {
-    margin-right: 8px;
-    &:not(last-child) {
-      margin-right: 8px;
+    &:nth-child(n + 4) {
+      margin-top: 0px;
     }
   }
 }
