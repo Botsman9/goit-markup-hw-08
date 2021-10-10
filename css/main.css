@@ -1462,7 +1462,6 @@ button {
 }
 
 .portfolio-cart__list {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1487,10 +1486,10 @@ button {
 
 .portfolio-cart__item {
   display: block;
+  margin-bottom: 30px;
   width: 450px;
   height: 404px;
   background: #ffffff;
-  margin-bottom: 30px;
 }
 
 .portfolio-cart__item:hover {
@@ -1508,6 +1507,9 @@ button {
     width: 354px;
     height: 404px;
   }
+  .portfolio-cart__item:nth-child(n + 9) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1515,9 +1517,13 @@ button {
     width: 370px;
     height: 404px;
   }
+  .portfolio-cart__item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-cart__text {
+  display: block;
   position: absolute;
   font-style: normal;
   font-weight: 400;
@@ -1541,6 +1547,7 @@ button {
   display: block;
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
 .portfolio-cart__box {
@@ -1554,6 +1561,7 @@ button {
 }
 
 .portfolio-cart__title {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1563,6 +1571,7 @@ button {
 }
 
 .portfolio-cart__subtitle {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -1763,5 +1772,105 @@ button {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.mobail-modal {
+  width: 480px;
+  height: 796px;
+  padding: 10px 15px 48px 40px;
+  background-color: var(--h1-text-color);
+  position: fixed;
+  top: 0px;
+}
+
+.mobail-modal__clouse {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}
+
+.mobail-modal__clouse:hover {
+  fill: var(--accent-color);
+}
+
+.mobail-modal__clouse :focus {
+  fill: var(--accent-color);
+}
+
+.mobail-nav__list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-top: 48px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobail-nav__item:nth-child(2) {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.mobail-nav__link {
+  color: #212121;
+}
+
+.mobail-contacts__list {
+  margin-top: 302px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobail-contacts__item:nth-child(2) {
+  margin-top: 32px;
+}
+
+.mobail-contacts__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobail-contacts__link_gmail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+}
+
+.mobail-network__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+}
+
+.mobail-network__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobail-network__link {
+  color: var(--accent-color);
+}
+
+.click {
+  color: var(--accent-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */

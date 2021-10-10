@@ -1,0 +1,94 @@
+.mobail-modal {
+  width: 480px;
+  height: 796px;
+  padding: 10px 15px 48px 40px;
+  background-color: var(--h1-text-color);
+  position: fixed;
+  top: 0px;
+}
+
+.mobail-modal__clouse {
+  background-color: transparent;
+
+  position: absolute;
+  right: 0;
+  &:hover {
+    fill: var(--accent-color);
+  }
+  :focus {
+    fill: var(--accent-color);
+  }
+}
+
+.mobail-nav__list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  margin-top: 48px;
+
+  flex-direction: column;
+}
+.mobail-nav__item {
+  &:nth-child(2) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.mobail-nav__link {
+  color: #212121;
+}
+
+.mobail-contacts__list {
+  margin-top: 302px;
+  flex-direction: column;
+}
+
+.mobail-contacts__item:nth-child(2) {
+  margin-top: 32px;
+}
+
+.mobail-contacts__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mobail-contacts__link_gmail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  margin-top: 32px;
+}
+
+.mobail-network__list {
+  display: flex;
+
+  margin-top: 64px;
+}
+
+.mobail-network__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobail-network__link {
+  color: var(--accent-color);
+}
+
+.click {
+  color: var(--accent-color);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Partfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/main.min.css">
-<!-- <link rel="stylesheet" href="./css/style.css"> -->
 
 </head>
 
@@ -24,7 +23,7 @@
     
         <ul class="site-nav">
           <li class="site-nav__item studio"><a href="./index.html" class="site-nav__link ">Студия</a></li>
-          <li class="site-nav__item portfolio"><a href="./portfolio.html" class="site-nav__link clip">Портфолио</a></li>
+          <li class="site-nav__item portfolio"><a href="./portfolio.html" class="site-nav__link current clip">Портфолио</a></li>
           <li class="site-nav__item contakt"><a href="" class="site-nav__link">Контакты</a></li>
         </ul>
       </nav>
@@ -45,9 +44,11 @@
         </li>
       </ul>
       <div class="head-mobail">
-        <button class="head-mobail__button"><svg width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_40px-1"></use>
-          </svg></button>
+        <button class="head-mobail__button" type="button" mobail-modal-open >
+          <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px-1"></use>
+        </svg>
+      </button>
       </div>
       </div>
 </header>
@@ -312,6 +313,48 @@
     </div>
   </div>
 </footer>
+
+<!-- модальное окно -->
+
+<div class="mobail-modal is-hidden" mobail-data-modal>
+  <button type="button" class="mobail-modal__clouse" mobail-modal-close>
+    <svg width="18" height="18" class="mobail-modal_icon">
+      <use href="./images/icons.svg#icon-close-black"></use>
+    </svg>
+  </button>
+  <div class="mobail-menu__nav">
+    <nav class="mobail-nav">
+      <ul class="mobail-nav__list">
+        <li class="mobail-nav__item"><a href="./index.html" class="mobail-nav__link">Студия</a></li>
+        <li class="mobail-nav__item"><a href="./portfolio.html" class="mobail-nav__link click">Портфолио</a></li>
+        <li class="mobail-nav__item"><a href="" class="mobail-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobail-menu__contakts">
+    <ul class="mobail-contacts__list">
+
+      <li class="mobail-contacts__item">
+        <a href="" class="mobail-contacts__link">+38 096 111 11 11</a>
+      </li>
+
+      <li class="mobail-contacts__item">
+        <a href="" class="mobail-contacts__link_gmail">info@devstudio.com</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="mobail-menu__network">
+    <ul class="mobail-network__list">
+      <li class="mobail-network__item"><a href="" class="mobail-network__link">Instagram</a></li>
+      <li class="mobail-network__item"><a href="" class="mobail-network__link">Twitter</a></li>
+      <li class="mobail-network__item"> <a href="" class="mobail-network__link">Facebook</a></li>
+      <li class="mobail-network__item"> <a href="" class="mobail-network__link">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="./js/modal-mobail.js"></script>
 
 </body>
 
