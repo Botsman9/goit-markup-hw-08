@@ -1,8 +1,10 @@
 .head-partfolio {
+  min-width: 480px;
   border: 1px solid#ECECEC;
 }
 
 .portfolio-button__list {
+  min-width: 480px;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     justify-content: center;

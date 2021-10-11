@@ -1417,10 +1417,12 @@ button {
 }
 
 .head-partfolio {
+  min-width: 480px;
   border: 1px solid #ECECEC;
 }
 
 .portfolio-button__list {
+  min-width: 480px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1505,6 +1507,7 @@ button {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
