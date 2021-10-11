@@ -43,6 +43,7 @@
 }
 
 .section-features__item:not(:last-child) {
+  margin-bottom: 0;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
@@ -76,9 +77,6 @@
 }
 
 .section-features__icon {
-  // width: 450px;
-  // height: 120px;
-
   padding: 25px 100px;
 
   background: var(--section-comand-text-color);

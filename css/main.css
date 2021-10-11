@@ -21,7 +21,8 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Общие стили */
@@ -424,6 +425,13 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .section-hero {
+    padding-top: 118px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-hero {
     text-align: center;
@@ -432,8 +440,9 @@ button {
 }
 
 .overlay {
+  display: block;
   background-color: #757575;
-  width: 480;
+  width: 480px;
   height: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -442,10 +451,24 @@ button {
   background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+  .overlay {
+    display: block;
+    background-color: #757575;
+    width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+    background-position: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .overlay {
     background-color: #757575;
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -456,6 +479,7 @@ button {
 }
 
 .section-hero__title {
+  margin: 0;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
@@ -561,6 +585,10 @@ button {
     display: block;
     margin-bottom: 30px;
   }
+}
+
+.section-features__item:not(:last-child) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -988,7 +1016,7 @@ button {
 }
 
 .section-footer {
-  background-color: var(--hero-color);
+  width: 100%;
   text-align: center;
   padding: 60px 0;
   background-color: var(--hero-color);
@@ -1254,7 +1282,7 @@ button {
 
 .footer-modal__container {
   display: block;
-  min-width: 570px;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -1489,7 +1517,7 @@ button {
   margin-bottom: 30px;
   width: 450px;
   height: 404px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .portfolio-cart__item:hover {
@@ -1533,7 +1561,7 @@ button {
   top: 0;
   height: 100%;
   color: #ffffff;
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   -webkit-transform: translatey(100%);
           transform: translatey(100%);
@@ -1813,12 +1841,23 @@ button {
 }
 
 .mobail-modal {
-  width: 480px;
+  width: 100vw;
   height: 796px;
   padding: 10px 15px 48px 40px;
   background-color: var(--h1-text-color);
   position: fixed;
   top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobail-modal__clouse {

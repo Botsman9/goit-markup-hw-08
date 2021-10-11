@@ -1,10 +1,14 @@
 .mobail-modal {
-  width: 480px;
+  width: 100vw;
   height: 796px;
   padding: 10px 15px 48px 40px;
   background-color: var(--h1-text-color);
   position: fixed;
   top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobail-modal__clouse {

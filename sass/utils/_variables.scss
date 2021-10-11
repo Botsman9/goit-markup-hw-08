@@ -17,7 +17,8 @@ ul {
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Общие стили */
@@ -93,6 +94,7 @@ button {
 
 .section {
   padding: 60px 0;
+
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
