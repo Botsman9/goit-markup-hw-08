@@ -140,6 +140,7 @@ button {
 }
 
 .head .container {
+  min-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +406,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 15px;
 }
 
 @media screen and (min-width: 768px) {

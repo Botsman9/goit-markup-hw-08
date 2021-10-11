@@ -3,6 +3,7 @@
   margin-left: 0;
 }
 .head .container {
+  min-width: 480px;
   display: flex;
   justify-content: space-between;
 }
@@ -211,7 +212,7 @@
 .head-mobail {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
