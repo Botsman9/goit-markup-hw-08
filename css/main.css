@@ -1508,6 +1508,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 40px;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1524,10 +1525,13 @@ button {
 
 .portfolio-cart__item {
   display: block;
-  margin-bottom: 30px;
   width: 450px;
   height: 404px;
   background-color: #ffffff;
+}
+
+.portfolio-cart__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-cart__item:hover {
@@ -1545,18 +1549,12 @@ button {
     width: 354px;
     height: 404px;
   }
-  .portfolio-cart__item:nth-child(n + 9) {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-cart__item {
     width: 370px;
     height: 404px;
-  }
-  .portfolio-cart__item:nth-child(n + 7) {
-    margin-bottom: 0;
   }
 }
 
@@ -1589,6 +1587,8 @@ button {
 }
 
 .portfolio-cart__box {
+  display: block;
+  padding: 20px 24px;
   background: #ffffff;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1604,8 +1604,6 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0;
-  padding: 20px 0 0 24px;
 }
 
 .portfolio-cart__subtitle {
@@ -1615,8 +1613,6 @@ button {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0;
-  padding: 4px 24px 20px;
 }
 
 .backdrop {
@@ -1851,7 +1847,7 @@ button {
 }
 
 .mobail-modal {
-  width: 100vw;
+  width: 480px;
   height: 796px;
   padding: 10px 15px 48px 40px;
   background-color: var(--h1-text-color);
