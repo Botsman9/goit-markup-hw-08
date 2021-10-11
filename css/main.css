@@ -1508,7 +1508,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 40px;
-  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {

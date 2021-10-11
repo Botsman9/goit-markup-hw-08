@@ -12,8 +12,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 40px;
-  min-width: 480px;
-
+  // min-width: 480px;
   @media screen and (min-width: 768px) {
     margin-top: 30px;
   }
@@ -90,6 +89,12 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .portfolio-cart__title {
