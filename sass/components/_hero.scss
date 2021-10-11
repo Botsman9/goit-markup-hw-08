@@ -24,7 +24,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img-hero.jpg);
+    url(../images/bg-phone.jpg);
   background-position: center;
   @media screen and (min-width: 768px) {
     display: block;
@@ -39,7 +39,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img-hero.jpg);
+      url(../images/bg-tablet.jpg);
     background-position: center;
   }
 
@@ -55,7 +55,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img-hero.jpg);
+      url(../images/bg-desktop.jpg);
     background-position: center;
   }
 }

@@ -57,7 +57,7 @@
 <!-- Основной контент -->
   <main>
     <!-- Герой -->
-     <section class="section-hero  overlay">
+     <section class="section section-hero  overlay">
       <div class="container">
         <h1 class="section-hero__title">Эффективные решения <br> для вашего бизнеса
         </h1>
@@ -168,7 +168,16 @@
         
             <ul class="comand-cart__list">
         
-              <li class="comand-cart__item"><img src="./images/img1.jpg" alt="фото игоря демьяненко" idth="270">
+              <li class="comand-cart__item">
+                <picture>
+                <source srcset="./images/img1-desktop.jpg 1x, ./images/img1-desktop@2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/img1-tablet.jpg 1x, ./images/img1-tablet@2x.jpg 2x"
+                media="(min-width:768px)">
+                <source srcset="./images/img1-phone.jpg 1x, ./images/img1-phone@2x.jpg 2x"
+                media="(min-width:480px)">
+                <img src="./images/img1.jpg" alt="фото игоря демьяненко" >
+              </picture>
                 <h3 class="comand-cart__title">Игорь Демьяненко</h3>
                 <p class="comand-cart__subtitle">Product Designer</p>
         
@@ -198,8 +207,14 @@
         
         
         
-              <li class="comand-cart__item"><img src="./images/img2.jpg" alt="фото ольга репина" idth="270">
-        
+              <li class="comand-cart__item">
+                <picture>
+                  <source srcset="./images/img2-desktop.jpg 1x, ./images/img2-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/img2-tablet.jpg 1x, ./images/img2-tablet@2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/img2-phone.jpg 1x, ./images/img2-phone@2x.jpg 2x" media="(min-width:480px)">
+                  <img src="./images/img2.jpg" alt="фото ольга репина" >
+                </picture>
+                
                 <h3 class="comand-cart__title">Ольга Репина</h3>
         
                 <p class="comand-cart__subtitle">Frontend Developer</p>
@@ -229,8 +244,14 @@
         
         
         
-              <li class="comand-cart__item"><img src="./images/img3.jpg" alt="фото николай тарасов" idth="270">
-        
+              <li class="comand-cart__item">
+                <picture>
+                  <source srcset="./images/img3-desktop.jpg 1x, ./images/img3-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/img3-tablet.jpg 1x, ./images/img3-tablet@2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/img3-phone.jpg 1x, ./images/img3-phone@2x.jpg 2x" media="(min-width:480px)">
+                  <img src="./images/img3.jpg" alt="фото николай тарасов" >
+                </picture>
+                
                 <h3 class="comand-cart__title">Николай Тарасов</h3>
         
                 <p class="comand-cart__subtitle">Marketing</p>
@@ -258,8 +279,15 @@
               </li>
         
         
-              <li class="comand-cart__item"><img src="./images/img4.jpg" alt="фото михаил ермаков" idth="270">
-        
+              <li class="comand-cart__item">
+                <picture>
+                  <source srcset="./images/img4-desktop.jpg 1x, ./images/img4-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/img4-tablet.jpg 1x, ./images/img4-tablet@2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/img4-phone.jpg 1x, ./images/img4-phone@2x.jpg 2x" media="(min-width:480px)">
+                  <img src="./images/img4.jpg" alt="фото михаил ермаков">
+                </picture>
+                
+            
                 <h3 class="comand-cart__title">Михаил Ермаков</h3>
         
                 <p class="comand-cart__subtitle">UI Designer</p>
@@ -345,7 +373,7 @@
 
 <!-- Футер -->
 
-   <footer class="section-footer">
+   <footer class=" section section-footer">
   <div class="container icon-container">
     <div class="footer-tab__container">
       <div class="section-footer__container">
