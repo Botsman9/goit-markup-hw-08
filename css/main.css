@@ -1525,7 +1525,6 @@ button {
 .portfolio-cart__item {
   display: block;
   width: 450px;
-  height: 404px;
   background-color: #ffffff;
 }
 
@@ -1546,14 +1545,12 @@ button {
 @media screen and (min-width: 768px) {
   .portfolio-cart__item {
     width: 354px;
-    height: 404px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-cart__item {
     width: 370px;
-    height: 404px;
   }
 }
 

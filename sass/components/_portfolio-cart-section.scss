@@ -25,7 +25,7 @@
   display: block;
 
   width: 450px;
-  height: 404px;
+  // height: 404px;
   background-color: #ffffff;
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -41,11 +41,11 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 404px;
+    // height: 404px;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
-    height: 404px;
+    // height: 404px;
     // &:nth-child(n + 7) {
     //   margin-bottom: 0;
     // }
